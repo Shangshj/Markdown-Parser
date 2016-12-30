@@ -6,7 +6,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * @package MarkeDownParser
  * @author Gourd
  * @version 1.0.0
- * @link http://typecho.org
+ * @link http://yutonger.com
  */
 class MarkdownParser_Plugin implements Typecho_Plugin_Interface
 {
@@ -20,6 +20,7 @@ class MarkdownParser_Plugin implements Typecho_Plugin_Interface
 	public static function activate()
 	{
 		Typecho_Plugin::factory('Widget_Abstract_Contents')->markdown = array('MarkdownParser_Plugin', 'markdown');
+		Typecho_Plugin::factory('Widget_Abstract_Comments')->markdown = array('MarkdownParser_Plugin', 'markdown');
 	}
 
 	/**
