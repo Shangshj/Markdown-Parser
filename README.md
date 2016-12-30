@@ -1,2 +1,2 @@
 # Markdown-Parser
-Markedown Parser For Typecho
+Markedown Parser Plugin For Typecho
